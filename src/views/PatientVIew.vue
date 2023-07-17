@@ -3,7 +3,7 @@
     <v-app-bar absolute color="white" scroll-target="#scrolling-techniques-7">
       <v-app-bar-nav-icon></v-app-bar-nav-icon>
 
-      <v-toolbar-title class="">Wisdom Hospital</v-toolbar-title>
+      <v-toolbar-title class="">Ezy Hospitals </v-toolbar-title>
 
       <v-spacer></v-spacer>
 
@@ -12,13 +12,7 @@
     <h2 class="tw-mt-12">Welcome {{ LoggedUser }}</h2>
     <v-row class="tw-mt-12">
       <v-spacer></v-spacer>
-      <v-col
-        v-for="doctor in doctors"
-        :key="doctor.id"
-        cols="12"
-        sm="6"
-        md="4"
-      >
+      <v-col v-for="doctor in doctors" :key="doctor.id" cols="12" sm="6" md="4">
         <v-card>
           <v-card-text>
             <div>Doctor ID: {{ doctor.id }}</div>
@@ -47,8 +41,7 @@ export default {
       if (!loggedInUser) {
         // Redirect to /login
         this.$router.push("/login");
-      }
-      else{
+      } else {
         this.LoggedUser = loggedInUser.name;
       }
     },
