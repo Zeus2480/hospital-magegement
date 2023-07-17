@@ -132,8 +132,21 @@ export default {
           gender: "Female",
           illness: "Back Pain",
         },
+        {
+          id: "P13",
+          name: "Shreyash Dhande",
+          age: 25,
+          gender: "Male",
+          illness: "Back Pain",
+        },
       ],
       doctors: [
+        {
+          id: "D0",
+          name: "Dr. Kr. Rishabh",
+          specialization: "Neurology",
+          experience: 15,
+        },
         {
           id: "D1",
           name: "Dr. John Smith",

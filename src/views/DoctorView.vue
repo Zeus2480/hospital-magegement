@@ -3,7 +3,7 @@
     <v-app-bar absolute color="white" scroll-target="#scrolling-techniques-7">
       <v-app-bar-nav-icon></v-app-bar-nav-icon>
 
-      <v-toolbar-title class="">Wisdom Hospital</v-toolbar-title>
+      <v-toolbar-title class="">Ezy Hospitals </v-toolbar-title>
 
       <v-spacer></v-spacer>
 
@@ -47,14 +47,13 @@ export default {
       if (!loggedInUser) {
         // Redirect to /login
         this.$router.push("/login");
-      }
-      else{
+      } else {
         this.LoggedUser = loggedInUser.name;
       }
     },
   },
   data: () => ({
-    LoggedUser:"",
+    LoggedUser: "",
     patients: [
       {
         id: "P1",
